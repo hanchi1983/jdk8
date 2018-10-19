@@ -154,7 +154,9 @@ public class CyclicBarrier {
 
     /** The lock for guarding barrier entry */
     private final ReentrantLock lock = new ReentrantLock();
-    /** Condition to wait on until tripped */
+    /** Condition to wait on until tripped 
+     * 到达障栅的条件
+    */
     private final Condition trip = lock.newCondition();
     /** The number of parties */
     private final int parties;
